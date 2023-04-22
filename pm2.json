@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "server",
+      "script": "serve.js",
+      "args": "serve",
+      "env": {
+        
+        "PORT": "8000",
+        "NODE_ENV": "development",
+        "DATABASE_URL": "mongodb+srv://mongodb:1234@cluster0.4snfbw1.mongodb.net/book_database?retryWrites=true&w=majority",
+        "JWT_SECRET": "random"
+      }, 
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
